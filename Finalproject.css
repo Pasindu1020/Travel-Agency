@@ -24,7 +24,7 @@ a {
     align-content: flex-start;
     height: 50vw;
     min-height: 400px;
-    max-height: 550px;
+    max-height: auto;
     min-width: 300px;
     color: #eee;
 }
@@ -200,7 +200,7 @@ a {
     }
 
     50% {
-        transform: scale(1.1) translateY(-20%)
+        transform: scale(1.2) translateY(0%)
     }
 }
 
@@ -237,7 +237,7 @@ a {
     margin: 20px;
     max-width: auto;
     max-height: 300px; /* Set max height for card */
-    overflow: hidden; /* Hide overflow */
+    overflow:auto; /* Hide overflow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
