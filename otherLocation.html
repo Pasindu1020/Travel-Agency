@@ -4,11 +4,11 @@
 <head>
     <meta name="'viewport" content="'width=device-width, initial-scale=1.0">
     <title>Other Locations</title>
-    <link rel="stylesheet" href="otherLocation.css">   
+    <link rel="stylesheet" href="otherLocation.css">
 </head>
 
 <body>
-   
+
     <div class="hero">
         <video autoplay loop muted plays-inline class="back-video">
             <source src="Images/OLVideo.mp4" type="video/mp4">
@@ -114,76 +114,81 @@
                         <input type="checkbox">
                         <p>Country</p><span>(0)</span>
                     </div>
+                    <br><br>
+                    <button class="btn">Filter</button>
                 </div>
             </div>
 
             <div class="right-col">
                 <h1>More Packages</h1>
-               
-                <ul class="package-list">
-                    <li>
-                        <div class="package-card">
-    
-                            <figure class="card-banner">
-                                <img src="Images/placeimage.jpeg" alt="Experience The Great Holiday on Beach"
-                                    loading="lazy">
-                            </figure> 
-    
-                            <div class="card-content">
-                                <h3 class="h3 card-title">Experience The Great Holiday on Beach</h3>
-                                <p class="card-text">Unlock hidden gems and unearth unforgettable experiences as you delve
-                                    deeper into your travels. Expand your horizons, embrace the unknown, and embark on an
-                                    adventure beyond the ordinary. With each new destination, your vacation transforms into
-                                    a
-                                    journey of discovery and delight. Seize the opportunity to explore more, and let every
-                                    moment be a chapter in your extraordinary vacation tale.</p>
-    
-                                    <ul class="card-meta-list">
-                                        <li class="card-meta-item">
-                                            <div class="meta-box">
-                                               <!-- <ion-icon name="Time"></ion-icon>-->
-                                                <p class="text">7D/6N</p>
-                                            </div>
-                                        </li>
 
-                                        <li class="card-meta-item">
-                                            <div class="meta-box">
-                                              <!--  <ion-icon name="People"></ion-icon> -->
-                                                <p class="text">Pax: 10</p>
-                                            </div>
-                                        </li>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="Images/Beach-Wallpaper-3840x2160-56146.jpg" alt="image">
+                    </div>
+                    <div class="house-info">
+                        <h3>Perfect 7 Days Turkey Travel Package</h3>
+                        <p>6 nights: Kuadasai (3N) > Istanbul (3N)
+                        <p><br>
+                        <p> 5 Star Hotels | 5 activities | Shared transfer | 24x7 concierge</p>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <br>
+                        <hr><br>
+                        <div class="house-price">
+                            <p class="price">$ 750 <br> / per person</span></p>
+                            <button class="btn">Book Now</button>
 
-                                        <li class="card-meta-item">
-                                            <div class="meta-box">
-                                               <!-- <ion-icon name="Location"></ion-icon> -->
-                                                <p class="text">Malasia</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                            </div> 
+                        </div>
+                        <br>
 
-                            <div class="card-price">
-                                <div class="wrapper">
-                                    <p class="reviews">25 reviews</p>
-                                <!--    <div class="card-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>  -->
-                                </div>
-                                <p class="price">$ 750 <span>/ per person</span></p>
+                    </div>
 
-                                <button class="btn btn-secondary">Book Now</button>
-                            </div>
+                    <div class="card">
+                        <hr>
+                        <br>
+                        <p>Some brief information tailed information here ion here..Turkey Holiday Packages Turkey, a
+                            mesmerizing country where East
+                            meets West, offers a wealth of cultural
+                            treasures, breathtaking landscapes, and un</p>
+                        <div class="more-info">
+                            <p>Detailed information here..Turkey Holiday Packages Turkey, a mesmerizing country where
+                                East
+                                meets West, offers a wealth of cultural
+                                treasures, breathtaking landscapes, and unique experiences that are sure to captiv</p>
+                        </div>
+                        <button class="show-more">Show More</button>
+                    </div>
 
-
-                        </div> 
-                    </li> 
-                </ul> 
+                </div>
             </div>
         </div>
+
+        <hr>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var buttons = document.querySelectorAll(".show-more");
+
+                buttons.forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        var moreInfo = this.previousElementSibling;
+                        if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                            moreInfo.style.display = "block";
+                            this.textContent = "Show Less";
+                        } else {
+                            moreInfo.style.display = "none";
+                            this.textContent = "Show More";
+                        }
+                    });
+                });
+            });
+        </script>
+
+
+    </div>
+    </div>
     </div>
 
 </body>

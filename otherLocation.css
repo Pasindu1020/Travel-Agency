@@ -79,6 +79,13 @@
     flex-basis: 70%;
 }
 
+.right-col h1{
+    color: red;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
 .sidebar{
     border: 1px solid #999;
     padding: 20px 30px;
@@ -117,130 +124,93 @@
 
 /* packages css */
 
-.package-list{
-    margin-bottom: 40px;
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid blue;
+    box-shadow: 1px 1px 20px rgba(9, 1, 1, 0.1);
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.package-list li:not(:last-child){
-    margin-bottom: 30px;
+.house-img{
+    flex-basis: 40%;    
 }
 
-.package-card{
-    background: var(--cultured);
-    overflow: hidden;
-    border-radius: 15px;
+.house-info{
+    flex-basis: 58%;
+    color: green;    
 }
 
-.package-card .card-banner{
-    height: 250px;
-}
-
-.package-card .card-banner img{
+.house-img img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 12px;
 }
 
-.package-card .card-content{
-    padding: 30px 20px;
+.house-info h3{
+    font-weight: 600;
+    color: purple;
+    font-size: 22px;
+    margin: 4px 0;
 }
 
-.package-card .card-title{
-    margin-bottom:  15px;
-}
-
-.package-card .card-text{
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.card-meta-list{
-    background: var(white);
-    max-width: max-content;
+.house-price{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    padding: 8px;
-    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.15);
-    border-radius: 50px;
+    justify-content: flex-end;
+    text-align: right;
+    
 }
 
-.card-meta-item{
-    position: relative;
+.house-price h4{
+    font-size: 20px;
 }
 
-.card-meta-item:not(:last-child)::after{
-    content: "";
-    position: absolute;
-    top: 4px;
-    right: -1px;
-    bottom: 4px;
-    width: 1px;
-    background: hsla(0, 0%, 0%, 0.3);
+.price {
+    margin-right: 10px; /* Adjust as needed */
+   
 }
 
-.meta-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding-inline: 9px;
-    color: var(--black-coral);
-    font-size: var(--fs-8);
-}
-
-/* for icons
-.meta-box > ion-icon{
-    color: var(--black-coral);
-    font-size: 13px;
-} */
-
-.package-card .card-price{
-    background: var(blue);
-    color: red;
-    padding: 25px 20px;
-    text-align: center;
-}
-
-.package-card .card-price .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5px 15px;
+.card {
+    
+    padding: 10px;
     margin-bottom: 10px;
-}
-
-.package-card .card-rating{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-    font-size: 14px;
-}
- 
-/* icon
-.package-card .card-rating ion-icon:last-child{
-    color: hsla(0, 0%, 0%, 0.15);
-} */
-
-.package-card .price{
-    font-size: 10px;
-    font-family: sans-serif;
-    font-weight: var(--fw-800);
-    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-.package-card .price span{
-    font-size: 10px;
-    font-weight: initial;
+.more-info {
+    display: none;
 }
 
-.package .btn {
-    margin-inline: auto;
+.show-more {   
+    align-self: flex-end;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;    
 }
 
 
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
 
+.btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
 
