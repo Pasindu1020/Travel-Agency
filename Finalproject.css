@@ -274,7 +274,7 @@ a {
       transform: translateX(0); /* Start from initial position */
     }
     100% {
-      transform: translateX(-40%); /* Move reviews to the left */
+      transform: translateX(-50%); /* Move reviews to the left */
     }
   }
   
