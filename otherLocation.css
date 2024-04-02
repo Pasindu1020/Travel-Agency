@@ -64,6 +64,32 @@
     }
 }
 
+
+/* intro */
+
+.intro {
+    background-color: #D6EAF8; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 10px gray;
+}
+
+.intro h3 {
+    color: black;
+    font-size: 24px; 
+    margin-bottom: 10px; 
+    font-weight: bold;
+}
+
+.intro p {
+    color: black; 
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+
+/* filter */
+
 .list-container{
     margin-top: 50px; 
     display: flex;
@@ -75,30 +101,49 @@
     flex-basis: 25%;
    }
 
+   .filter input[type="checkbox"] {    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+    width: 20px;
+    height: 20px;    
+    border: 2px solid #21618C;
+    background-color: white; 
+    cursor: pointer; 
+    outline: none; 
+}
+
+.filter input[type="checkbox"]:checked {    
+    appearance: checkbox;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+}
+
 .right-col{
-    flex-basis: 70%;
+    flex-basis: 70%;   
 }
 
 .right-col h1{
-    color: red;
-    font-weight: 600;
-    margin-bottom: 30px;
+    color: #21618C;
+    font-weight: bold;
+    margin-bottom: 30px;    
 }
 
 
 .sidebar{
-    border: 1px solid #999;
+    border: 1px solid #040d49;
     padding: 20px 30px;
     margin-top: 30px;
+    margin-left: 20px;
 }
 
-.sidebar h2{
-    font-weight: 500;
+.sidebar h2{    
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .sidebar h3{
-    font-weight: 500;
+    font-weight: bold;
     margin: 20px 0 10px;
     padding: 5px;
 }
@@ -106,7 +151,7 @@
 .filter{
     display: flex;
     align-items: center;
-    color: #555;
+    color: #000000;
     margin-bottom: 10px;   
     margin: 1px;
 }
@@ -129,10 +174,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 30px 0;
-    border-top: 1px solid blue;
-    box-shadow: 1px 1px 20px rgba(9, 1, 1, 0.1);
+    border-top: 3px solid #21618C;
+   margin-right: 20px;
+    box-shadow: 2px 2px 20px #21618C;
     padding: 15px;
     border-radius: 10px;
+    
 }
 
 .house-img{
@@ -141,7 +188,12 @@
 
 .house-info{
     flex-basis: 58%;
-    color: green;    
+    color: black;    
+}
+
+.para{
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .house-img img{
@@ -150,10 +202,16 @@
 }
 
 .house-info h3{
-    font-weight: 600;
-    color: purple;
+    font-weight: bold;
+    color: #21618C;
     font-size: 22px;
     margin: 4px 0;
+}
+
+.rating{
+    margin-right: 120px; 
+    text-align: left;
+    
 }
 
 .house-price{
@@ -169,16 +227,16 @@
 }
 
 .price {
-    margin-right: 10px; /* Adjust as needed */
-   
+   margin-right: 20px; 
+   text-align: right;
+   font-weight: bold;
 }
 
-.card {
-    
+.card {    
     padding: 10px;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .more-info {
@@ -191,6 +249,8 @@
     border: none;
     background-color: transparent;
     cursor: pointer;    
+    color: #21618C;
+    font-size: 17px;
 }
 
 
@@ -201,8 +261,8 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #007bff;
-    color: #007bff;
+    border: 2px solid #21618C;
+    color: #21618C;
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -210,7 +270,7 @@
 }
 
 .btn:hover {
-    background-color: #007bff;
+    background-color: #21618C;
     color: #fff;
 }
 
