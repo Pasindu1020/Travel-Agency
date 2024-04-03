@@ -204,6 +204,10 @@ a {
     }
 }
 
+.topt {
+  float:left;
+  width:12.5%;
+}
 .content {
     padding: 5% 10%;
     text-align: justify
