@@ -225,7 +225,7 @@ a {
 .destination-info {
   position: absolute;
   top: 10px;
-  left: 30px;
+  right: 20px;
   background-color: rgba(212, 206, 206, 0.455);
   padding: 5px 10px;
   font-size: 20px;
