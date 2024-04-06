@@ -180,7 +180,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 30px 0;
-    
+    border-top: 3px solid #21618C;
     margin-right: 20px;
     box-shadow: 2px 2px 20px #21618C;
     padding: 15px;
