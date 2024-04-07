@@ -26,6 +26,7 @@
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
+    cursor: default;
 }
 
 .content h1:hover {
@@ -83,6 +84,7 @@
     margin-bottom: 10px;
     font-weight: bold;
     font-family: Candara;
+    cursor: default;
 }
 
 .intro p {
@@ -90,7 +92,7 @@
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor:alias; 
+    cursor:default; 
 }
 
 
@@ -157,6 +159,7 @@
     font-weight: bold;
     margin-bottom: 30px;
     font-family: Candara;
+    cursor: default;
 }
 
 
@@ -165,11 +168,7 @@
     padding: 20px 30px;
     margin-top: 30px;
     margin-left: 20px;
-
-  
-   
     background-color: #f9f9f9;
-  
     border-radius: 5px;
     box-shadow: 2px 2px 10px gray;
 }
@@ -178,6 +177,7 @@
 .sidebar h2 {
     font-family: Candara;
     font-weight: bold;
+    cursor: default;
 }
 
 .sidebar h3 {
@@ -185,6 +185,7 @@
     margin: 20px 0 10px;
     padding: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
 }
 
 .filter {
@@ -198,6 +199,7 @@
 .filter p {
     flex: 1;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
 }
 
 .filter input {
@@ -252,10 +254,12 @@
     font-size: 22px;
     margin: 4px 0;
     font-family: Candara;
+    cursor: default;
 }
 
 .tour-info p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
 }
 
 .rating {
@@ -274,6 +278,7 @@
 
 .tour-price h4 {
     font-size: 20px;
+    cursor: default;
 }
 
 .price {
@@ -291,6 +296,7 @@
 
 .card p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
 }
 
 .more-info {
