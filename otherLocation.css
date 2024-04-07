@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 
 .hero {
@@ -98,11 +99,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    
 }
 
 .left-col {
     flex-basis: 25%;
+    position: sticky;
+    top: 20px; /* Adjust top position */
+    height:570px;
+
+    flex: 1;
+    padding-right: 20px;
+
+    overflow-y: auto;
+    
 }
+
+.scrollbox {
+    overflow: auto;
+    padding-right: 10px;
+    overflow-y: auto;
+    
+   
+}
+
+
+
 
 .filter input[type="checkbox"] {
     appearance: none;
@@ -124,6 +147,7 @@
 
 .right-col {
     flex-basis: 70%;
+    
 }
 
 .right-col h1 {
@@ -139,7 +163,15 @@
     padding: 20px 30px;
     margin-top: 30px;
     margin-left: 20px;
+
+  
+   
+    background-color: #f9f9f9;
+  
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px gray;
 }
+
 
 .sidebar h2 {
     font-family: Candara;
@@ -173,15 +205,18 @@
 }
 
 
+
+
 /* packages css */
 
 .tour {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px 0;
+    padding: 30px 0px 0px 0px;
     border-top: 3px solid #0f0f0f;
     margin-right: 20px;
+    margin-left: 10px;
     box-shadow: 1px 0px 5px #2e2f30;
     padding: 15px;
     border-radius: 10px;
@@ -326,3 +361,8 @@
     background: black;
     color: white;
 }
+
+
+
+
+
