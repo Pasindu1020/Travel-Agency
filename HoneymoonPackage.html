@@ -5,7 +5,7 @@
 <head>
     <meta name="'viewport" content="'width=device-width, initial-scale=1.0">
     <title>Honeymoon Packages</title>
-    <link rel="stylesheet" href="HoneymoonPackage.css">
+    <link rel="stylesheet" href="package.css">
 </head>
 
 <body>
@@ -519,6 +519,18 @@
 
                 </div> <br><br>
 
+                <div class="pagination">
+                    <img src="Images/iarrow.png" alt="arrow">
+                    <span class="current">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>&middot;&middot;&middot;&middot;</span>
+                    <span>20</span>
+                    <img src="Images/iarrow.png" alt="arrow" class="right-arrow">
+                </div>
                  
 
 
@@ -526,31 +538,62 @@
             </div>
         </div>
 
+        
+
         <hr>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var buttons = document.querySelectorAll(".show-more");
+        
 
-                buttons.forEach(function (button) {
-                    button.addEventListener("click", function () {
-                        var moreInfo = this.previousElementSibling;
-                        if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
-                            moreInfo.style.display = "block";
-                            this.textContent = "Show Less";
-                        } else {
-                            moreInfo.style.display = "none";
-                            this.textContent = "Show More";
-                        }
-                    });
+
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <img src="Images/Facebook.png" class="social-icon__link">
+          <img src="Images/Instagram.png" class="social-icon__link">
+          <img src="Images/Twitter.png" class="social-icon__link">
+          <img src="Images/LinkedIn.png" class="social-icon__link">
+        </ul>
+    
+        <ul class="menu1">
+          <li class="menu1__item"><a class="menu1__link" href="#">Home</a></li>
+          <li class="menu1__item"><a class="menu1__link" href="#">About</a></li>
+          <li class="menu1__item"><a class="menu1__link" href="#">Services</a></li>
+          <li class="menu1__item"><a class="menu1__link" href="#">Team</a></li>
+          <li class="menu1__item"><a class="menu1__link" href="#">Contact</a></li>
+    
+        </ul>
+        <p>&copy;2024 Horizon TechBee | All Rights Reserved</p>
+      </footer>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var buttons = document.querySelectorAll(".show-more");
+
+            buttons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    var moreInfo = this.previousElementSibling;
+                    if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                        moreInfo.style.display = "block";
+                        this.textContent = "Show Less";
+                    } else {
+                        moreInfo.style.display = "none";
+                        this.textContent = "Show More";
+                    }
                 });
             });
-        </script>
+        });
+    </script>
 
 
-    </div>
-    </div>
-    </div>
 
 </body>
 
