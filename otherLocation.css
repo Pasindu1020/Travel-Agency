@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 
 .hero {
@@ -41,6 +42,7 @@
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
+
 }
 
 .back-video {
@@ -98,11 +100,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    
 }
 
 .left-col {
     flex-basis: 25%;
+    position: sticky;
+    top: 20px; /* Adjust top position */
+    height:570px;
+
+    flex: 1;
+    padding-right: 20px;
+
+    overflow-y: auto;
+    
 }
+
+.scrollbox {
+    overflow: auto;
+    padding-right: 10px;
+    overflow-y: auto;
+    
+   
+}
+
+
+
 
 .filter input[type="checkbox"] {
     appearance: none;
@@ -124,6 +148,7 @@
 
 .right-col {
     flex-basis: 70%;
+    
 }
 
 .right-col h1 {
@@ -139,7 +164,15 @@
     padding: 20px 30px;
     margin-top: 30px;
     margin-left: 20px;
+
+  
+   
+    background-color: #f9f9f9;
+  
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px gray;
 }
+
 
 .sidebar h2 {
     font-family: Candara;
@@ -173,16 +206,19 @@
 }
 
 
+
+
 /* packages css */
 
 .tour {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px 0;
-    border-top: 3px solid #21618C;
+    padding: 30px 0px 0px 0px;
+    border-top: 3px solid #0f0f0f;
     margin-right: 20px;
-    box-shadow: 2px 2px 20px #21618C;
+    margin-left: 10px;
+    box-shadow: 1px 0px 5px #2e2f30;
     padding: 15px;
     border-radius: 10px;
 
@@ -206,6 +242,7 @@
 .tour-img img {
     width: 100%;
     border-radius: 12px;
+    height: 200px;
 }
 
 .tour-info h3 {
@@ -291,3 +328,42 @@
     background-color: #21618C;
     color: #fff;
 }
+
+/* pegination */
+
+.pagination img{
+    height: 15px;
+    width: 15px;
+   
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.right-arrow {
+    transform: rotate(180deg);
+}
+
+.pagination span{
+   margin: 10px 8px;
+   width: 40px; 
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.pagination .current{
+    background: black;
+    color: white;
+}
+
+
+
+
+
