@@ -5,6 +5,50 @@
     font-family: sans-serif;
     
 }
+-----------------------------------------
+.menu-bar {
+    background-color: #45439f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+
+  ---------------------------------------
 
 .hero {
     width: 100%;
