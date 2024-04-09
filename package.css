@@ -3,9 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-decoration: none;
     
 }
 -----------------------------------------
+
+.navbar{
+  background: crimson;
+  font-family: 'Courier New', Courier, monospace;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*
 .menu-bar {
     background-color: #45439f;
     color: #fff;
@@ -26,7 +36,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    top: 5px;
+    
   }
   
   .menu li {
@@ -48,7 +58,7 @@
     background-color: #555;
     border-radius: 5px;
   }
-
+*/
   ---------------------------------------
 
   .hero {
