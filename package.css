@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    top: 5px;
   }
   
   .menu li {
@@ -51,12 +52,15 @@
   ---------------------------------------
 
   .hero {
+    height: 75vh;
+    width: 100%;
    
     position: relative;
     padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 
 }
 
@@ -71,8 +75,8 @@
     font-weight: 600;
     transition: 0.5s;
     cursor: default;
-    padding-top: 200px;
-    padding-bottom: 30px;
+    margin-top: 250px;
+    
 }
 
 .content h1:hover {
@@ -92,37 +96,34 @@
 
 }
 
-.back-video {
+.back-videoo {
     position: absolute;
     right: 0;
     bottom: 10px;
     top:50px;
     z-index: -1;  
-}
+    filter: brightness(50%);
 
-.back-video::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity to make it darker/lighter */
+  
+
+    
 }
 
 @media (min-aspect-ratio: 16/9) {
-    .back-video {
-        width: 100%;
-        height: auto;
-    }
+  .back-videoo {
+      width: 100%;
+      height: auto;
+  }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .back-video {
-        width: auto;
-        height: 100%;
-    }
+  .back-videoo {
+      width: auto;
+      height: 100%;
+  }
 }
+
+
 
 
 /* intro */
