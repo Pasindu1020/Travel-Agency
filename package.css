@@ -506,47 +506,6 @@ button a {
   color: #fff;
 }
 
-/* pegination */
-
-.pagination img {
-  height: 15px;
-  width: 15px;
-
-}
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.right-arrow {
-  transform: rotate(180deg);
-}
-
-.pagination span {
-  margin: 10px 8px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.pagination .current {
-  background: black;
-  color: white;
-}
-
-.pagination a{
-  color: black;
-}
-
-.current a{
-  color: white;
-}
 
 /*footer*/
 
