@@ -12,7 +12,6 @@ body {
 .header1 {
   width: auto;
   height: 75vh;
-  background-image: linear-gradient(rgba(50, 34, 119, 0.3), rgba(12, 3, 51, 0.3));
   position: relative;
   padding: 0 5%;
   display: flex;
@@ -24,7 +23,7 @@ body {
 
 .logo2 {
   position: absolute;
-  top: 20px; /* Adjust this value to fine-tune the vertical position */
+  top: 10px; /* Adjust this value to fine-tune the vertical position */
   left: 20px; /* Adjust this value to fine-tune the horizontal position */
   z-index: 1000; /* Ensure the logo appears above other content */
 }
@@ -67,6 +66,8 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
+  
+  filter: brightness(60%);
 
 
 
