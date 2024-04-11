@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -88,7 +92,8 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-
+  margin-right: 50px;
+  
 }
 
 .logo img {
@@ -98,29 +103,31 @@
 
 
 
-li {
+.pack {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
+  
 }
 
-li a {
+.pack a {
   font-size: 18px;
-  font-weight: bold;
+  
   margin-right: 25px;
-
   text-decoration: none;
   color: #fff;
   padding: 10px;
   transition: all 0.3s ease;
+  font-family: 'Josefin Sans', sans-serif;
+  
 }
 
-li:last-child {
+.pack:last-child {
   margin-right: 0;
 }
 
-li a:hover {
-  background-color: #555;
+.pack a:hover {
+  background-color: #21618C;
   border-radius: 5px;
 }
 
@@ -136,6 +143,20 @@ button a {
   color: white;
   font-weight: bold;
   font-size: 15px;
+}
+
+
+
+.logo-container {
+
+  right: 20px;
+  top: 5px;
+  position: absolute;
+}
+
+.logo-container img {
+  width: 40px;
+  height: auto;
 }
 
 /*-----------------------*/
@@ -160,6 +181,7 @@ button a {
   color: #fff;
   font-weight: 600;
   transition: 0.5s;
+  cursor: default;
 }
 
 .content h1:hover {
@@ -238,6 +260,11 @@ button a {
   justify-content: space-between;
 
 
+}
+
+.logo2 img{
+  height: 50px;
+  width: 90px;
 }
 
 
@@ -572,6 +599,7 @@ button a {
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
+  cursor: default;
 }
 
 .wave {

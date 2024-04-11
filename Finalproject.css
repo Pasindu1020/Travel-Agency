@@ -18,6 +18,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+ 
+}
+
+.logo2 {
+  position: absolute;
+  top: 20px; /* Adjust this value to fine-tune the vertical position */
+  left: 20px; /* Adjust this value to fine-tune the horizontal position */
+  z-index: 1000; /* Ensure the logo appears above other content */
+}
+
+.logo2 img {
+  width: 110px;
+  height: 60px;
 }
 
 .content {
@@ -29,6 +43,7 @@ body {
   color: #fff;
   font-weight: 600;
   transition: 0.5s;
+  cursor: default;
 }
 
 .content h1:hover {
@@ -52,6 +67,9 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
+
+
+
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -141,6 +159,8 @@ body {
   width: 50%
 }
 
+
+
 .logo {
   border: 2px solid #fff;
   border-radius: 3px;
@@ -205,6 +225,10 @@ body {
   /* Center items horizontally*/
 }
 
+.topt h2{
+  cursor: default;
+}
+
 .destination {
   position: relative;
   margin: 20px;
@@ -226,6 +250,7 @@ body {
   font-weight: bold;
   border-radius: 5px;
   color: black;
+  cursor: pointer;
 }
 
 /* Media query for smaller screens */
@@ -265,7 +290,10 @@ body {
   margin-bottom: 0px;
   margin-left: 0px;
   line-height: 25px;
+  cursor: default;
 }
+
+
 
 .responsive-cell-block {
   min-height: 75px;
@@ -487,6 +515,7 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: default;
 }
 
 .slider__caption {
@@ -557,6 +586,7 @@ quote {
   padding: 40px;
   font-weight: 700;
   color: rgb(0, 135, 177);
+  cursor: default;
 }
 
 .gallery-image {
@@ -689,6 +719,7 @@ quote {
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
+  cursor: default;
 }
 
 .wave {
