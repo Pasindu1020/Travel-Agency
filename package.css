@@ -99,6 +99,7 @@
 .logo img {
   height: 50px;
   width: 90px;
+  margin-left: 30px;
 }
 
 
@@ -273,7 +274,7 @@ button a {
   position: sticky;
   top: 60px;
   /*Adjust top position*/
-  height: 570px;
+  height: 690px;
 
   flex: 1;
   padding-right: 20px;
@@ -328,6 +329,7 @@ button a {
   margin-bottom: 30px;
   font-family: Candara;
   cursor: default;
+  margin-left: 20px;
 }
 
 
@@ -479,7 +481,7 @@ button a {
   color: #21618C;
   font-size: 17px;
   font-family: Candara;
-  
+
 }
 
 
@@ -538,6 +540,13 @@ button a {
   color: white;
 }
 
+.pagination a{
+  color: black;
+}
+
+.current a{
+  color: white;
+}
 
 /*footer*/
 
