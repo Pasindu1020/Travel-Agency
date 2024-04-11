@@ -6,7 +6,7 @@
 
      //Database Connection
 
-     $conn = new mysqli('localhost', 'root', '', 'travelagency');
+     $conn = mysqli_connect('localhost', 'root', '', 'travelagency');
      if($conn->connect_error){
         die('Connection Failed :'.$conn->connect_error);
      } else {
