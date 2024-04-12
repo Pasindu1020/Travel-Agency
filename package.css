@@ -381,6 +381,23 @@ button a {
 
 }
 
+.stars{
+  margin-right: 80px;
+  margin-left: 60px;
+  text-align: left;
+
+}
+
+.stars i{
+  font-size: 20px;
+  color: orange;
+}
+
+span p{
+  font-size: 20px;
+}
+
+
 .tour-price {
   display: flex;
   align-items: center;
@@ -392,12 +409,25 @@ button a {
 .tour-price h4 {
   font-size: 20px;
   cursor: default;
+  
 }
 
 .price {
-  margin-right: 20px;
+  margin-right: 25px;
+  color: #A93226 ;
   text-align: right;
   font-weight: bold;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 0px;
+}
+
+.price span{
+  font-size: 20px;
+  display: inline-block; 
+  line-height: 1;
+  color: black;
+
 }
 
 .card {
@@ -425,14 +455,19 @@ button a {
   color: #21618C;
   font-size: 17px;
   font-family: Candara;
+  width: 100px;
 
+}
+
+.tick i{
+  color:#52BE80;
 }
 
 
 .btn {
-  display: inline-block;
+  display: block;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -443,6 +478,8 @@ button a {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   font-family: Candara;
+  width: 170px;
+  margin: 0 auto;    
 }
 
 .btn:hover {
@@ -450,6 +487,18 @@ button a {
   color: #fff;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center; /* Center items vertically */
+
+  
+ 
+}
+
+.spacer {
+  flex-grow: 1; /* Allow the spacer to grow and fill the available space */
+}
 
 
 /*footer*/

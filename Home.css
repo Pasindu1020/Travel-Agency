@@ -369,6 +369,7 @@ body {
   width: 125px;
   display: flex;
   justify-content: space-between;
+  margin-top: 1px;
 }
 
 .name {
@@ -785,4 +786,27 @@ quote {
   100% {
     background-positon-x: 0px;
   }
+}
+
+
+.btn1 {
+  display: block;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #21618C;
+  color: #21618C;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-family: Candara;
+  width: 100px;
+}
+
+.btn1:hover {
+  background-color: #21618C;
+  color: #fff;
 }
