@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.backimage{
+   background: linear-gradient(to bottom, #1a237e, #21618C, #3949ab, #64b5f6); 
+}
+
+
+
+.logo img {
+    height: 100px;
+    width: 180px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+ 
+
+
+section{
+    padding: 2rem 9%;
+    
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.heading span{
+    font-size: 60px;
+    background: white;
+    color: #21618C;
+    border-radius: 0.5rem;
+    padding: 10px 20px 10px 20px;    
+}
+
+
+
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;    
+}
+
+.packages .box-container .box{
+    flex: 1 1 300px;
+    border-radius: .5rem;
+    overflow: hidden;
+    
+    background-color: white;
+    
+}
+
+.packages .box-container .box:hover {
+    box-shadow: 0 2px 5px white; 
+}
+
+.packages .box-container .box img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.packages .box-container .box .content{
+    padding: 2rem;
+}
+
+.packages .box-container .box .content h3{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.packages .box-container .box .content h3 i{
+    color: orangered;
+}
+
+.packages .box-container .box .content p{
+    font-size: 20px;
+    color: black;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.packages .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: orange;
+}
+
+.packages .box-container .box .content .price{
+    font-size: 2rem;
+    color: #21618C;
+    padding-top: 1rem;
+    font-weight: bold;
+    margin-left: 10px
+}
+
+
+.price span {
+    font-size: 18px; /* Set the font size for the 'per person' text */
+    color: #777; /* Set a lighter color for the 'per person' text */
+    margin-left: 20px;
+}
+
+.btn {
+    display: block;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #21618C;
+    color: #21618C;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-family: Candara;
+    width: 200px;
+    margin: 0 auto;    
+  }
+
+  .btn:hover {
+    background-color: #21618C;
+    color: #fff;
+  }
+  
+
+
+  .btn2 {
+    display: block;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #21618C;
+    color: #21618C;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-family: Candara;
+    width: 500px;
+    margin: 0 auto;   
+  }
+  
+
+  .btn2:hover {
+    background-color: #21618C;
+    color: #fff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
