@@ -688,7 +688,9 @@ quote {
   align-items: center;
   margin: 10px 0;
   flex-wrap: wrap;
+  list-style: none;
 }
+
 
 .social-icon__item,
 .menu1__item {
