@@ -3,13 +3,13 @@
 
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="CSS/Login.css">
 </head>
 
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="Login.php" method="post">
+            <form action="PHP/Signup.php" method="post">
                 <h1>Create Account</h1>
                 <input type="text" placeholder="First Name" name="fname">
                 <input type="text" placeholder="Last Name" name="lname">
@@ -19,10 +19,10 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="PHP/Login.php" method="post">
                 <h1>Sign in</h1>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" placeholder="Email" name="logemail">
+                <input type="password" placeholder="Password" name="logpassword">
                 <a href="#">Forgot your password?</a>
                 <button>Sign In</button>
             </form>

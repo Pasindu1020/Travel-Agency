@@ -4,6 +4,7 @@
      $email = $_POST['email'];
      $password = $_POST['password'];
 
+
      //Database Connection
 
      $conn = mysqli_connect('localhost', 'root', '', 'travelagency');
@@ -13,7 +14,7 @@
         $stmt = $conn->prepare("insert into Users(Firstname, Lastname, Email, Password) values (?,?,?,?)");
         $stmt->bind_param("ssss", $firstname, $lastname, $email, $password);
         $stmt->execute();
-        echo "Registration Succcessfully";
+        echo "<script>alert('Successfully registered'); window.location.href='Login.html';</script>";
         $stmt->close();
         $conn->close();
      }

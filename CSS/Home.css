@@ -33,6 +33,15 @@ body {
   height: 65px;
 }
 
+.logout h3 {
+  color: white;
+  top:28px;
+  right:10px;
+  position: absolute;
+  display: flex;
+  text-decoration: none;
+}
+
 .content {
   text-align: center;
 }
