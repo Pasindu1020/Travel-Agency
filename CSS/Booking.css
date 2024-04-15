@@ -101,7 +101,7 @@ select {
     cursor: pointer;
 }
 
-h3 {
+h2 {
     text-transform: uppercase;
     font-size: 35px;
     font-family: "Poppins-Medium";
@@ -110,6 +110,32 @@ h3 {
     margin-bottom: 22px;
     font-weight: 500;
 }
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 span{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.inputbox input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #3e91f7;
+    font-size: 18px;
+    color: gray;
+    text-transform: none;
+    margin-top: 5px;
+    
+}
+
+
 
 .form-row {
     display: flex;
