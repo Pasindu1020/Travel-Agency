@@ -432,7 +432,7 @@ body {
 /* Review */
 
 .sectionreview{
-  background-color: rgb(199, 225, 234);
+  background-color: rgb(224, 241, 246);
 }
 
 .sectionreview h1 {
@@ -446,7 +446,7 @@ body {
 }
 
 .testimonials-section {
-  background:rgb(199, 225, 234);
+  background: rgb(224, 241, 246);
   height: 500px;
   position: relative;
   overflow: hidden;

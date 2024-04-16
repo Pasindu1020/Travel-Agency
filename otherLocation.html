@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/package.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+
 </head>
 
 <body>
@@ -62,88 +63,88 @@
                         <div class="scrollbox-inner">
                             <h3>Budget</h3>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="600">
                                 <p>Below $ 600</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="600-900">
                                 <p>$ 600 - $ 900</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="900-1200">
                                 <p>$ 900 - $ 1200</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="1200=1800">
                                 <p>$ 1200 - $ 1800</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="1800-2400">
                                 <p>$ 1800 - $ 2400</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="2400">
                                 <p>Above $ 2400</p><span>(0)</span>
                             </div>
 
                             <h3>No of Days</h3>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="3-5">
                                 <p>3 - 5 Days</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="6-8">
                                 <p>6 - 8 Days</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="9-12">
                                 <p>9 - 12 Days</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="13-16">
                                 <p>13 - 16 Days</p><span>(0)</span>
                             </div>
 
 
                             <h3>Country</h3>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Cambodia">
                                 <p> Cambodia</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Dubai">
                                 <p>Dubai</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Maldives">
                                 <p>Maldives</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Nepal">
                                 <p>Nepal</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Philippine">
                                 <p>Philippines</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Singapore">
                                 <p>Singapore</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="SouthKorea">
                                 <p>South Korea</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Srilanka">
                                 <p>Sri Lanka</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Taiwan">
                                 <p>Taiwan</p><span>(0)</span>
                             </div>
                             <div class="filter">
-                                <input type="checkbox">
+                                <input type="checkbox" class="filter-checkbox" value="Vietnam">
                                 <p>Vietnam</p><span>(0)</span>
                             </div>
                         </div>
@@ -153,12 +154,10 @@
                     <br><br>
 
                     <div class="button-container">
-                        <button class="btn">Filter</button>
+                        <button class="btn" id="filter-btn">Filter</button>
                         <span class="spacer"></span>
-                        <button class="btn">Reset</button>
+                        <button class="btn" id="reset-btn">Reset</button>
                     </div>
-
-                    <button class="btn">Filter</button>
 
 
                 </div>
@@ -169,7 +168,7 @@
 
                 <!-- tour 1 -->
 
-                <div class="tour">
+                <div class="tour" data-price="1500" data-days="12" data-country="Vietnam">
                     <div class="tour-img">
                         <img src="Images/ivietnam.jpg" alt="image">
                     </div>
@@ -177,13 +176,13 @@
                         <h3>Vietnam Discovery Tour</h3>
                         <p class="para">12 Nights: Hanoi > Halong Bay > Hoi An > Ho Chi Minh City
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -227,7 +226,7 @@
 
                 <!-- tour 2 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="1000" data-days="7" data-country="Cambodia">
                     <div class="tour-img">
                         <img src="Images/iCambodia.jpeg" alt="image">
                     </div>
@@ -235,13 +234,13 @@
                         <h3>Temples of Angkor in Cambodia</h3>
                         <p class="para">07 Nights: Siem Reap > Angkor Wat > Tonle Sap Lake
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -288,7 +287,7 @@
 
                 <!-- tour 3 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="2000" data-days="10" data-country="Philippine">
                     <div class="tour-img">
                         <img src="Images/iphilippines.jpeg" alt="image">
                     </div>
@@ -344,11 +343,11 @@
                         <button class="show-more">Show&nbsp;More</button>
                     </div>
 
-                </div> 
+                </div>
 
                 <!-- tour 4 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="1800" data-days="14" data-country="Nepal">
                     <div class="tour-img">
                         <img src="Images/inepal.jpeg" alt="image">
                     </div>
@@ -400,11 +399,11 @@
                         <button class="show-more">Show&nbsp;More</button>
                     </div>
 
-                </div> 
+                </div>
 
                 <!-- tour 5 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="1500" data-days="7" data-country="SouthKorea">
                     <div class="tour-img">
                         <img src="Images/isouthkorea.jpeg" alt="image">
                     </div>
@@ -413,13 +412,13 @@
                         </h3>
                         <p class="para">07 Nights: Seoul > Busan > Jeju Island
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -456,11 +455,11 @@
                         <button class="show-more">Show&nbsp;More</button>
                     </div>
 
-                </div> 
+                </div>
 
                 <!-- tour 6 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="1500" data-days="9" data-country="Taiwan">
                     <div class="tour-img">
                         <img src="Images/itiwan.jpeg" alt="image">
                     </div>
@@ -470,13 +469,13 @@
                         <p class="para">09 Nights: Taipei > Taroko Gorge > Sun Moon Lake > Kaohsiung
 
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -517,11 +516,11 @@
                         <button class="show-more">Show&nbsp;More</button>
                     </div>
 
-                </div> 
+                </div>
 
                 <!-- tour 7 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="500" data-days="4" data-country="Dubai">
                     <div class="tour-img">
                         <img src="Images/idubai.jpeg" alt="image">
                     </div>
@@ -530,13 +529,13 @@
                         </h3>
                         <p class="para">04 Nights: Burj Khalifa > Dubai Mall > Dune Bashing
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -552,7 +551,7 @@
                                 </span>
 
                             </div>
-                            <p class="price">$  500&nbsp; <br> <span> / per person </span></p>
+                            <p class="price">$ 500&nbsp; <br> <span> / per person </span></p>
                             <a href="#popup1" class="btn">Book Now</a>
 
                         </div>
@@ -574,11 +573,11 @@
                         <button class="show-more">Show&nbsp;More</button>
                     </div>
 
-                </div> 
+                </div>
 
                 <!-- tour 8 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="800" data-days="7" data-country="Srilanka">
                     <div class="tour-img">
                         <img src="Images/isrilanka.jpeg" alt="image">
                     </div>
@@ -588,13 +587,13 @@
                         <p class="para">07 Nights: Colombo > Kandy > Nuwara Eliya > Yala National Park
 
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -610,7 +609,7 @@
                                 </span>
 
                             </div>
-                            <p class="price">$  800&nbsp; <br> <span> / per person </span></p>
+                            <p class="price">$ 800&nbsp; <br> <span> / per person </span></p>
                             <a href="#popup1" class="btn">Book Now</a>
 
                         </div>
@@ -635,11 +634,11 @@
                         <button class="show-more">Show&nbsp;More</button>
                     </div>
 
-                </div> 
+                </div>
 
                 <!-- tour 9 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="2000" data-days="10" data-country="Singapore">
                     <div class="tour-img">
                         <img src="Images/isingapore.jpeg" alt="image">
                     </div>
@@ -648,13 +647,13 @@
                         </h3>
                         <p class="para">10 Nights: Marina Bay Sands > Sentosa > Lau Pa Sat Hawker Centre
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -694,11 +693,11 @@
                         <button class="show-more">Show&nbsp;More</button>
                     </div>
 
-                </div> 
+                </div>
 
                 <!-- tour 10 --> <br><br>
 
-                <div class="tour">
+                <div class="tour" data-price="1500" data-days="8" data-country="Maldives">
                     <div class="tour-img">
                         <img src="Images/imaldives.jpeg" alt="image">
                     </div>
@@ -707,13 +706,13 @@
                         </h3>
                         <p class="para">08 Nights: Male > Maafushi > Fulidhoo > Thulusdhoo
                         <p><br>
-                            <div class="tick">
-                                <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
-                                    <i class="fas fa-check"></i> 12 activities &nbsp;
-                                    <i class="fas fa-check"></i> Shared transfer &nbsp;
-                                    <i class="fas fa-check"></i> 24x7 concierge
-                                </p>
-                            </div>
+                        <div class="tick">
+                            <p> <i class="fas fa-check"></i> 5 Star Hotels &nbsp;
+                                <i class="fas fa-check"></i> 12 activities &nbsp;
+                                <i class="fas fa-check"></i> Shared transfer &nbsp;
+                                <i class="fas fa-check"></i> 24x7 concierge
+                            </p>
+                        </div>
                         <br>
                         <hr><br>
 
@@ -757,8 +756,8 @@
 
                 </div> <br><br>
 
-                <!-- tour end -->       
-                                
+                <!-- tour end -->
+
 
             </div>
         </div>
@@ -775,7 +774,7 @@
             <h2>Log in to continue</h2>
             <a class="close" href="#">&times;</a>
             <div class="content">
-              <a href="Login.html">click here</a>to Login to Our web page
+                <a href="Login.html">click here</a>to Login to Our web page
             </div>
         </div>
     </div>
@@ -794,7 +793,7 @@
             <li><a href="https://www.instagram.com"><img src="Images/Instagram.png" class="social-icon__link"></a></li>
             <li><a href="https://twitter.com"><img src="Images/Twitter.png" class="social-icon__link"></a></li>
             <li><a href="https://www.linkedin.com"><img src="Images/LinkedIn.png" class="social-icon__link"></a></li>
-          </ul>
+        </ul>
 
         <ul class="menu1">
             <li class="menu1__item"><a class="menu1__link" href="#">Home</a></li>
@@ -807,32 +806,7 @@
         <p>&copy;2024 Horizon TechBee | All Rights Reserved</p>
     </footer>
 
-    
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var buttons = document.querySelectorAll(".show-more");
-
-            buttons.forEach(function (button) {
-                button.addEventListener("click", function () {
-                    var moreInfo = this.previousElementSibling;
-                    if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
-                        moreInfo.style.display = "block";
-                        this.textContent = "Show Less";
-                    } else {
-                        moreInfo.style.display = "none";
-                        this.textContent = "Show More";
-                    }
-                });
-            });
-        });
-
-
-
-
-    </script>
-
-
+    <script src="function.js"></script>
 
 </body>
 
