@@ -1,0 +1,406 @@
+/*
+@font-face {
+    font-family: "Muli-Regular";
+    src: url("../fonts/muli/Muli-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Muli-SemiBold";
+    src: url("../fonts/muli/Muli-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("../fonts/poppins/Poppins-Medium.ttf");
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins-Regular";
+    font-size: 13px;
+    margin: 0;
+    color: #999;
+}
+*/
+
+/* start here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+
+
+  
+  body {
+    background: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+ background-image: url("../Images/city.jpeg" ); 
+}
+
+
+
+.navbar {
+    background: #151F42;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 999;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  
+  
+  }
+  
+  .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+  
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 90px;
+    margin-left: 30px;
+  }
+
+  .pack {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+  
+  }
+  
+  .pack a {
+    font-size: 18px;
+  
+    margin-right: 25px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Josefin Sans', sans-serif;
+  
+  }
+  
+  .pack:last-child {
+    margin-right: 0;
+  }
+  
+  .pack a:hover {
+    background-color: #21618C;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 90px;
+  }
+  
+  button a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  
+  
+  .logo-container {
+  
+    right: 20px;
+    top: 5px;
+    position: absolute;
+  }
+  
+  .logo-container img {
+    width: 40px;
+    height: auto;
+  }
+
+  /* header end */
+  
+
+:root {
+    --yellow: #ffbd13;
+    --blue: #4383FF;
+    --blue-d-1: #3278FF;
+    --light: #F5F5F5;
+    --grey: #AAA;
+    --white: #FFF;
+    --shadow: 8px 8px 30px black;
+}
+
+
+.wrapper {
+    background: white;
+    padding: 2rem;
+    max-width: 576px;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: 8px 8px 30px black;
+    text-align: center;
+    
+    
+    margin-left: 500px;
+    margin-top: 100px;
+    
+}
+
+.wrapper h3{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 50px;
+    color: #F39C12;
+    margin-bottom: 2rem;
+}
+
+.rating .star{
+    cursor: pointer;
+}
+
+
+ 
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.rating .star:hover{
+    transform: scale(1.1);
+}
+
+textarea {
+    width: 100%;
+    background: whitesmoke;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+}
+
+.btn-group {
+    display: flex;
+    grid-gap: .5rem;
+    align-items: center;
+}
+
+.btn-group .btn{
+    display: block;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #21618C;
+  color: #21618C;
+  background-color: #D6EAF8 ;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-family: Candara;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.btn-group .btn.Submit{
+    color: #21618C;
+}
+
+.btn-group .btn.Submit:hover{
+    background-color: #21618C;
+  color: #fff;
+}
+
+.btn-group .btn.cancel{
+    color: #21618C;
+    margin-left: 75px;
+}
+
+.btn-group .btn.cancel:hover{
+    background-color: #21618C;
+  color: #fff;
+}
+
+/*footer*/
+
+.footer {
+    position: relative;
+    width: auto;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .social-icon__item,
+  .menu1__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu1__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: default;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+  
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+  
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
