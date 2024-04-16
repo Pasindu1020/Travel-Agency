@@ -2,7 +2,8 @@
      $email = $_POST['email'];
      $mobilenum = $_POST['mobileno'];
      $checkin = $_POST['checkin'];
-     $checkout = $_POST['checkout'];
+     $adults = $_POST['adults'];
+     $child = $_POST['children'];
 
 
      //Database Connection
@@ -19,8 +20,8 @@
         $stmt->fetch();
         $stmt->close();
 
-        $stmt = $conn->prepare("insert into Booking(Contact_No, Checkin_date, Checkout_date, User_id) values (?,?,?,?)");
-        $stmt->bind_param("issi", $mobilenum, $checkin, $checkout, $userId);
+        $stmt = $conn->prepare("insert into Booking(Contact_No, Checkin_date, Adult, Children, User_id) values (?,?,?,?,?)");
+        $stmt->bind_param("isiii", $mobilenum, $checkin, $adults, $child, $userId);
         $stmt->execute();
         header("Location: Payment.html");
         $stmt->close();
