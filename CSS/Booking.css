@@ -70,7 +70,7 @@ a {
 .wrapper {
     min-height: 100vh;
     position: relative;
-    background: url("Images/Komodo-National-Park-in-Indonesia.jpg") no-repeat right center;
+    background: url("../Images/Komodo-National-Park-in-Indonesia.jpg") no-repeat right center;
     background-size: cover;
 }
 

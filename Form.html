@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Join With Us
+        </title>
+        <link rel="stylesheet" href="CSS/form.css">
+       
+        
+    </head>
+    <body>
+
+        <div class="main-w3layouts wrapper">
+            <h1>Join With Us</h1>
+            <div class="main-agileinfo">
+                <div class="agileits-top">
+                    <form id="myForm" onsubmit="return validateForm()" method="post">
+                        <input class="text" id="name" type="text" name="Name" placeholder="Name" required="" minlength="3" >
+                        <input class="text email" id="email" type="email" name="email" placeholder="Email" required="">
+                        <input class="text" id="mobile" type="text" name="Mobile Number" placeholder="Mobile Number" required=""><br><br>
+                        <input class="text" type="text" name="Message" placeholder="Message" required="" minlength="10">
+                        <div class="wthree-text">
+                            <div class="clear"> </div>
+                        </div>
+                        <input type="submit" value="Join With Us">
+                    </form>
+                    
+                </div>
+            </div>
+            <ul class="colorlib-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <script type="application/x-javascript"> 
+            addEventListener("load", function() { 
+            setTimeout(hideURLbar, 0); 
+            }, 
+            false); 
+            function hideURLbar(){
+                 window.scrollTo(0,1); 
+                 }
+                 
+                 
+            function validateForm(){
+              // Get values from form        
+             const name = document.getElementById("name").value.trim();
+             const mobile = document.getElementById("mobile").value.trim();
+             const email = document.getElementById("email").value.trim(); 
+             // Validate name        i
+             if (name === ""){ 
+                alert("Please enter a valid name"); 
+                return false;            
+            }
+            // Validate mobile number        
+            if (mobile === "" || isNaN(mobile) || mobile.length !== 10){ 
+                alert("Please enter a valid mobile number"); 
+                return false; 
+            } 
+            // Validate email        
+            if (email === "" || email.indexoOf("@") === -1 || email.indexOf(".") === -1){
+                alert("Please enter a valid email address"); 
+                return false; 
+            }
+            // if all validation pass, submit form        
+            return false;
+        }
+        </script>
+
+
+    </body>
+</html>
