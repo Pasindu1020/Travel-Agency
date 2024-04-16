@@ -377,6 +377,10 @@ body {
   align-items: center;
 }
 
+.team-card a {
+  text-decoration: none;
+}
+
 .social-media-links {
   width: 125px;
   display: flex;

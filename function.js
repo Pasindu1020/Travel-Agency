@@ -63,13 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('reset-btn').addEventListener('click', function() {
-        // Uncheck all checkboxes
+
         var checkboxes = document.querySelectorAll('.filter-checkbox:checked');
         checkboxes.forEach(function(checkbox) {
           checkbox.checked = false;
         });
     
-        // Show all packages
         var packages = document.querySelectorAll('.tour');
         packages.forEach(function(package) {
           package.style.display = 'flex';
