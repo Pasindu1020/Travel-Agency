@@ -74,4 +74,12 @@ function resetFilters() {
 }
 
 
+// script for show items in payment
+
+
+function selectProduct(productName,  productDescription, productPrice) {
+    localStorage.setItem('selectedProduct', JSON.stringify({ name: productName, description: productDescription, price: productPrice }));
+    window.location.href = 'Payment.html';
+}
+
 

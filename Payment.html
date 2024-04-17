@@ -1,99 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- custom css file link  -->
     <link rel="stylesheet" href="CSS/Payment.css">
-
 </head>
+
 <body>
-
-<div class="container">
-
-    <form action="Loader.html">
-
-        <div class="row">
-
-            <!-- <div class="col">
-
-                <h3 class="title">billing address</h3>
-
-                <div class="inputBox">
-                    <span>full name :</span>
-                    <input type="text" placeholder="john deo">
-                </div>
-                <div class="inputBox">
-                    <span>email :</span>
-                    <input type="email" placeholder="example@example.com">
-                </div>
-                <div class="inputBox">
-                    <span>address :</span>
-                    <input type="text" placeholder="room - street - locality">
-                </div>
-                <div class="inputBox">
-                    <span>city :</span>
-                    <input type="text" placeholder="mumbai">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>state :</span>
-                        <input type="text" placeholder="india">
-                    </div>
-                    <div class="inputBox">
-                        <span>zip code :</span>
-                        <input type="text" placeholder="123 456">
-                    </div>
-                </div>
-
-            </div> -->
-
-            <div class="col">
-
-                <h3 class="title">payment</h3>
-
-                <div class="inputBox">
-                    <span>cards accepted :</span>
-                    <img src="Images/card_img.png"">
-                </div>
-                <div class="inputBox">
-                    <span>name on card :</span>
-                    <input type="text" placeholder="mr. john deo">
-                </div>
-                <div class="inputBox">
-                    <span>credit card number :</span>
-                    <input type="number" placeholder="xxxx-xxxx-xxxx-xxxx">
-                </div>
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>exp year :</span>
-                        <input type="number" placeholder="2022">
-                    </div>
-                    <div class="inputBox">
-                        <span>exp month :</span>
-                        <input type="text" placeholder="01">
+    <div class="container">
+        <form onsubmit="submitPayment(event)">
+            <div class="row">
+                <div class="col">
+                    <h3>Package Details</h3>
+                    <div id="selectedProductDetails"></div>
+                    <h3 class="title">Payment</h3>
+                    <div class="payment">
+                        <div class="inputBox">
+                            <span>Cards Accepted:</span>
+                            <img src="Images/card_img.png">
+                        </div>
+                        <div class="inputBox">
+                            <label for="name">Name on Card:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardNumber">Credit Card Number:</label>
+                            <input type="text" id="cardNumber" name="cardNumber" required>
+                        </div>
+                        <div class="flex">
+                            <div class="inputBox">
+                                <label for="cardExp">Exp Year:</label>
+                                <input type="text" id="cardExp" name="cardExp" required>
+                            </div>
+                            <div class="inputBox">
+                                <label for="cardMon">Exp Month:</label>
+                                <input type="text" id="cardMon" name="cardMon" required>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="inputBox">
+                                <label for="cardCvv">CVV:</label>
+                                <input type="text" id="cardCvv" name="cardCvv" required>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>CVV :</span>
-                        <input type="number" placeholder="eg :373">
-                    </div>
-                </div>
-
             </div>
-    
-        </div>
+            <input type="submit" value="Proceed to Checkout" class="submit-btn">
+        </form>
+    </div>
 
-        <input type="submit" value="proceed to checkout" class="submit-btn">
+    <script>
+        function submitPayment(event) {
+            event.preventDefault();
 
-    </form>
+            const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
+            const name = document.getElementById('name').value;
+            const cardNumber = document.getElementById('cardNumber').value;
+            const cardExp = document.getElementById('cardExp').value;
+            const cardMon = document.getElementById('cardMon').value;
+            const cardCvv = document.getElementById('cardCvv').value;
 
-</div>    
-    
+            if (!selectedProduct) {
+                alert('No product selected for payment.');
+                return;
+            }
+
+            alert(`Thank you, ${name}! Your payment of Product '${selectedProduct.name}' with card ending in ${cardNumber.slice(-4)} has been processed.`);
+
+            localStorage.removeItem('selectedProduct');
+            window.location.href = 'Loader.html';
+        }
+
+        const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
+        if (selectedProduct) {
+            const selectedProductDetailsElement = document.getElementById('selectedProductDetails');
+            selectedProductDetailsElement.innerHTML = `
+                <h2>${selectedProduct.name}</h2>                
+                <p>${selectedProduct.description}</p>
+                <p>${selectedProduct.price}</p>
+            `;
+        }
+    </script>
+
 </body>
+
 </html>
