@@ -29,6 +29,9 @@ $result4 = $conn->query($sql4);
 $sql5 = "SELECT * FROM otherpackage";
 $result5 = $conn->query($sql5);
 
+$sql6 = "SELECT * FROM hmpackage_details";
+$result6 = $conn->query($sql6);
+
 // Check if the query executed successfully
 if (!$result) {
     die("Error fetching data: " . $conn->error);
@@ -234,9 +237,9 @@ if (!$result) {
     <section>
 
         <h1>Package Details</h1>
-        <div class="tbl-header">
         <div class="row">
         <div class="column">
+        <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>
@@ -264,7 +267,9 @@ if (!$result) {
                 </tbody>
             </table>
     </div>
+    </div>
     <div class="column">
+    <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>
@@ -292,8 +297,37 @@ if (!$result) {
                 </tbody>
             </table>
     </div>
+    </div>
+    </div>
+    <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>HM Package ID</th>
+                        <th>HM Package Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+            </table>
         </div>
-        </div>
+
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <?php
+
+        while($row = $result6->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>".$row["HMpackage_id"]."</td>";
+            echo "<td>".$row["HMpackage_name"]."</td>";
+            echo "<td>".$row["Price"]."</td>";
+            echo "</tr>";
+        }
+        ?>
+                </tbody>
+            </table>
+    </div>
+
     </section>
 
 
