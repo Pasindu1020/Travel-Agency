@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the statement
     if ($stmt->execute() === TRUE) {
-        echo "Review submitted successfully.";
+        echo "<script>alert('Review submitted successfully.'); window.location.href='Home.html';</script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
