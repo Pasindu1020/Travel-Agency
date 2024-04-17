@@ -237,8 +237,6 @@ if (!$result) {
     <section>
 
         <h1>Package Details</h1>
-        <div class="row">
-        <div class="column">
         <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
@@ -267,8 +265,6 @@ if (!$result) {
                 </tbody>
             </table>
     </div>
-    </div>
-    <div class="column">
     <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
@@ -296,8 +292,6 @@ if (!$result) {
         ?>
                 </tbody>
             </table>
-    </div>
-    </div>
     </div>
     <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
