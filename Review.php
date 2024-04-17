@@ -1,22 +1,38 @@
 <?php
-     $review_id = $_POST['reviewid'];
-     $lastname = $_POST['lname'];
-     $email = $_POST['email'];
-     $password = $_POST['password'];
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Connect to your database (replace these with your actual database credentials)
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "travelagency";
 
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-     //Database Connection
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-     $conn = mysqli_connect('localhost', 'root', '', 'travelagency');
-     if($conn->connect_error){
-        die('Connection Failed :'.$conn->connect_error);
-     } else {
-        $stmt = $conn->prepare("insert into Users(Firstname, Lastname, Email, Password) values (?,?,?,?)");
-        $stmt->bind_param("ssss", $firstname, $lastname, $email, $password);
-        $stmt->execute();
-        echo "<script>alert('Successfully registered'); window.location.href='Login.html';</script>";
-        $stmt->close();
-        $conn->close();
-     }
+    // Get form data
+    $rating = $_POST['rating'];
+    $review = $_POST['review'];
+    $name = $_POST['name'];
+    $opinion = $_POST['opinion'];
 
+    // Prepare and bind SQL statement
+    $stmt = $conn->prepare("INSERT INTO review (rating, review, name, opinion) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("isss", $rating, $review, $name, $opinion);
+
+    // Execute the statement
+    if ($stmt->execute() === TRUE) {
+        echo "Review submitted successfully.";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    // Close statement and connection
+    $stmt->close();
+    $conn->close();
+}
 ?>
