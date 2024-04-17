@@ -18,7 +18,7 @@
                         <input class="text" id="name" type="text" name="Name" placeholder="Name" required="" minlength="3" >
                         <input class="text email" id="email" type="email" name="email" placeholder="Email" required="">
                         <input class="text" id="mobile" type="text" name="Mobile Number" placeholder="Mobile Number" required=""><br><br>
-                        <input class="text" type="text" name="Message" placeholder="Message" required="" minlength="10">
+                        <input class="text" type="text" name="Message" placeholder="What sparked your interest in joining us?" required="" minlength="10">
                         <div class="wthree-text">
                             <div class="clear"> </div>
                         </div>
@@ -72,7 +72,10 @@
                 return false; 
             }
             // if all validation pass, submit form        
-            return false;
+            //
+            alert('Successfully registered'); 
+            window.location.href='Home.html';
+            //return false;
         }
         </script>
 
