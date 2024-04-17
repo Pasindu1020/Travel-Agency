@@ -16,13 +16,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get form data
     $rating = $_POST['rating'];
-    $review = $_POST['review'];
-    $name = $_POST['name'];
-    $opinion = $_POST['opinion'];
+    $review = $_POST['option'];
+    $email = $_POST['email'];
+    
+    $getUserIdQuery = "SELECT UserID FROM users WHERE email = ?";
+        $stmt = $conn->prepare($getUserIdQuery);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->bind_result($userId);
 
     // Prepare and bind SQL statement
-    $stmt = $conn->prepare("INSERT INTO review (rating, review, name, opinion) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("isss", $rating, $review, $name, $opinion);
+    $stmt = $conn->prepare("INSERT INTO review (review_text, email, rating, User_id) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssii", $review, $email, $rating, $User_id);
 
     // Execute the statement
     if ($stmt->execute() === TRUE) {
