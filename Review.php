@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get form data
     $rating = $_POST['rating'];
-    $review = $_POST['option'];
+    $review = $_POST['opinion'];
     $email = $_POST['email'];
     
     $getUserIdQuery = "SELECT UserID FROM users WHERE email = ?";
@@ -24,10 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $stmt->bind_result($userId);
+        $stmt->fetch();
+        $stmt->close();
 
     // Prepare and bind SQL statement
-    $stmt = $conn->prepare("INSERT INTO review (review_text, email, rating, User_id) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssii", $review, $email, $rating, $User_id);
+    $stmt = $conn->prepare("insert into review(review_text, Email, rating, User_id) values (?,?,?,?)");
+    $stmt->bind_param("sssi", $review, $email, $rating, $userId);
 
     // Execute the statement
     if ($stmt->execute() === TRUE) {
