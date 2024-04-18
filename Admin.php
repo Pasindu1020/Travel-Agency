@@ -32,6 +32,9 @@ $result5 = $conn->query($sql5);
 $sql6 = "SELECT * FROM hmpackage_details";
 $result6 = $conn->query($sql6);
 
+$sql7 = "SELECT * FROM joinus";
+$result7 = $conn->query($sql7);
+
 // Check if the query executed successfully
 if (!$result) {
     die("Error fetching data: " . $conn->error);
@@ -322,6 +325,41 @@ if (!$result) {
             </table>
     </div>
 
+    </section>
+
+    <section>
+
+        <h1>People who wants to Join with Us</h1>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <?php
+
+        while($row = $result7->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>".$row["Uname"]."</td>";
+            echo "<td>".$row["UEmail"]."</td>";
+            echo "<td>".$row["UContactno"]."</td>";
+            echo "<td>".$row["Message"]."</td>";
+            echo "</tr>";
+        }
+        ?>
+                </tbody>
+            </table>
+        </div>
     </section>
 
 
