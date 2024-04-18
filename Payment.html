@@ -15,6 +15,7 @@
                 <div class="col">
                     <h3>Package Details</h3>
                     <div id="selectedProductDetails"></div>
+                    <br><br><br>
                     <h3 class="title">Payment</h3>
                     <div class="payment">
                         <div class="inputBox">
@@ -68,7 +69,7 @@
                 return;
             }
 
-            alert(`Thank you, ${name}! Your payment of Product '${selectedProduct.name}' with card ending in ${cardNumber.slice(-4)} has been processed.`);
+            alert(`Thank you, ${name}! Your payment for the Package '${selectedProduct.name}' with card ending in ${cardNumber.slice(-4)} has been processed.`);
 
             localStorage.removeItem('selectedProduct');
             window.location.href = 'Loader.html';
