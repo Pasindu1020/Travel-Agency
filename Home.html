@@ -149,7 +149,7 @@
         </p>
         <p class="text-blk section-subhead-text">
           Embark on unforgettable journeys led by our passionate and knowledgeable tour guides
-              </p>
+        </p>
         <div class="responsive-container-block">
           <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
             <div class="team-card">
@@ -296,15 +296,15 @@
                 Join With Us
               </p>
               <p class="text-blk position">
-                <a href="Form.html">  <button class="btn1">Join</button></a>
+                <a href="Form.html"> <button class="btn1">Join</button></a>
               </p>
-              
-              
+
+
             </div>
           </div>
 
-          
-          
+
+
         </div>
       </div>
     </div>
@@ -321,7 +321,8 @@
       <div class="slider__inner">
         <div class="slider__contents">
           <quote>&rdquo;</quote>
-          <p class="slider__txt">Great experience booking my trip with Silk Road Odessey. Special thanks to Miss. Pramudi,
+          <p class="slider__txt">Great experience booking my trip with Silk Road Odessey. Special thanks to Miss.
+            Pramudi,
             coordinator and planer of my trip. She suggested sun siyam iru veli resort and it was excellent destination.
             I recommend Silk Road Odessey.</p>
           <h2 class="slider__caption">Rhonda | NylonCraft</h2>
@@ -430,7 +431,7 @@
     </div>
   </section>
 
- 
+
   <br><br><br><br><br><br><br><br><br><br>
 
   <footer class="footer">
@@ -448,16 +449,43 @@
     </ul>
 
     <ul class="menu1">
-      <li class="menu1__item"><a class="menu1__link" href="#">Home</a></li>
-      <li class="menu1__item"><a class="menu1__link" href="#">About</a></li>
-      <li class="menu1__item"><a class="menu1__link" href="#section4">Gallery</a></li>
-      <li class="menu1__item"><a class="menu1__link" href="#section2">Team</a></li>
-      <li class="menu1__item"><a class="menu1__link" href="#">Contact</a></li>
-
+      <li class="menu1__item"><a class="menu2__link" href="#">Home</a></li>
+      <li class="menu1__item"><a class="menu1__link" data-target="about" href="#">About</a></li>
+      <li class="menu1__item"><a class="menu1__link" data-target="contact" href="#">Contact</a></li>
+      <li class="menu1__item"><a class="menu1__link" data-target="address" href="#">Address</a></li>
     </ul>
-    
+
     <p>&copy;2024 Horizon TechBee | All Rights Reserved</p>
   </footer>
+
+  <div id="popup-about" class="popup">
+    <p>Welcome to Silk Road Odessey, where unforgettable journeys begin. Discover handcrafted travel packages designed
+      to inspire and delight. Whether you crave the tranquility of beach getaways, the adventure of exotic locales, or
+      the cultural richness of historic cities, we curate experiences that promise lifelong memories. Start your next
+      adventure with us.</p>
+  </div>
+  <div id="popup-address" class="popup">
+    <p>Visit Us:</p>
+    <br>
+    <p>Our Main Office:</p>
+    <br>
+    <p>No: 105,</p>
+    <p> Main Street,</p>
+    <p> Horowpathana</p>
+    <br>
+    <p>Branch:</p>
+    <br>
+    <p>No: 10/15,</p>
+    <p> 2nd Street,</p>
+    <p> Colombo</p>
+  </div>
+  <div id="popup-contact" class="popup">
+    <p>Email: silkroadodessy@gmail.com</p>
+    <br>
+    <p>Phone: +94774568764</p>
+    <br>
+    <p>Phone: +94716453728</p>
+  </div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -476,6 +504,32 @@
         }
       });
 
+    });
+
+    // script for footer 
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const footerLinks = document.querySelectorAll('.menu1__link');
+
+      footerLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const target = this.getAttribute('data-target');
+          const popup = document.getElementById(`popup-${target}`);
+          const overlay = document.createElement('div');
+          overlay.classList.add('overlay');
+          document.body.appendChild(overlay);
+
+          popup.style.display = 'block';
+          overlay.style.display = 'flex';
+
+          overlay.addEventListener('click', function () {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+            document.body.removeChild(overlay);
+          });
+        });
+      });
     });
 
   </script>
