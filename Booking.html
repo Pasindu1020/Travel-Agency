@@ -14,36 +14,74 @@
                 <div class="form-row">
                     <div class="inputbox">
                         <h3>Email<span>*</span></h3>
-                        <input type="email" name="email" placeholder="Email" required > 
+                        <input type="email" name="email" placeholder="Email" required>
                     </div> &emsp;
                     <div class="inputbox">
                         <h3>Mobile Number<span>*</span> </h3>
                         <input type="text" name="mobileno" placeholder="Mobile Number" required>
                     </div>
                 </div>
+
+                <div class="form-row">
+                    <div class="inputbox">
+                        <!-- Country Dropdown -->
+                        <h3>Country<span>*</span></h3>
+                        <select id="country" name="country" required>
+                            <option value="" selected disabled>Select Country</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="South Korea">South Korea</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Vietnam">Vietnam</option>
+                        </select>
+                    </div> &emsp;
+
+                    <div class="inputbox">
+                        <!-- Package Type Dropdown -->
+                        <h3>Package<span>*</span></h3>
+                        <select id="package" name="package" required>
+                            <option value="" selected disabled>Select Package Type</option>
+                            <option value="Basic">Family Package</option>
+                            <option value="Standard">Honeymoon Package</option>
+                            <option value="Premium">Other Package</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="form-row">
                     <div class="inputbox">
                         <h3>Check-In<span>*</span> </h3>
                         <div class="form-row2">
-                        <input type="date" name="checkin" required> </div>
+                            <input type="date" name="checkin" required>
+                        </div>
                     </div> &emsp;&emsp;&emsp;
                 </div>
                 <div class="form-row last">
                     <div class="inputbox">
                         <h3>Adults<span>*</span> </h3>
-                        <input type="number" name="adults" placeholder="Number of Adults" required> 
+                        <input type="number" name="adults" placeholder="Number of Adults" required>
                     </div> &emsp;
                     <div class="inputbox">
                         <h3>Children<span>*</span> </h3>
                         <input type="number" name="children" placeholder="Number of Children" required>
                     </div>
                 </div>
-               <button data-text="Pay Now">
+                <button data-text="Pay Now">
                     <span><a href="Payment.html" class="button2">Pay Now</a></span>
-                </button> 
-               
-               
-              
+                </button>
+
+
+
             </form>
         </div>
     </div>
