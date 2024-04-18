@@ -21,7 +21,7 @@
         $stmt->close();
 
         $stmt = $conn->prepare("insert into Booking(Contact_No, Checkin_date, Adult, Children, User_id) values (?,?,?,?,?)");
-        $stmt->bind_param("isiii", $mobilenum, $checkin, $adults, $child, $userId);
+        $stmt->bind_param("ssiii", $mobilenum, $checkin, $adults, $child, $userId);
         $stmt->execute();
         header("Location: Payment.html");
         $stmt->close();
