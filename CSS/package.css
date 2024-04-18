@@ -406,6 +406,11 @@ span p {
 
 }
 
+.tour-price a {
+  text-decoration: none;
+
+}
+
 .tour-price h4 {
   font-size: 20px;
   cursor: default;
