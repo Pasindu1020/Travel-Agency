@@ -82,4 +82,23 @@ function selectProduct(productName,  productDescription, productPrice) {
     window.location.href = 'Payment.html';
 }
 
+// for show more
+
+document.addEventListener("DOMContentLoaded", function () {
+  var buttons = document.querySelectorAll(".show-more");
+
+  buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+          var moreInfo = this.previousElementSibling;
+          if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+              moreInfo.style.display = "block";
+              this.textContent = "Show Less";
+          } else {
+              moreInfo.style.display = "none";
+              this.textContent = "Show More";
+          }
+      });
+  });
+});
+
 
