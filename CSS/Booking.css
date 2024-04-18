@@ -135,6 +135,19 @@ h3 span{
     cursor: pointer;
 }
 
+.inputbox select{
+    width: 195px;
+    padding: 1rem;
+    border: 1px solid #3e91f7;
+    font-size: 18px;
+    color: gray;
+    text-transform: none;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+
 
 
 .form-row {
@@ -145,11 +158,12 @@ h3 span{
 .form-row2 {
     display: flex;
     width: 400px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .form-row.last {
     margin-bottom: 22px;
+    margin-top: 1px;
 }
 
 .form-row .form-wrapper {
