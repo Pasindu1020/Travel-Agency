@@ -135,17 +135,6 @@ h3 span{
     cursor: pointer;
 }
 
-.inputbox select{
-    width: 195px;
-    padding: 1rem;
-    border: 1px solid #3e91f7;
-    font-size: 18px;
-    color: gray;
-    text-transform: none;
-    margin-top: 5px;
-    cursor: pointer;
-
-}
 
 
 
