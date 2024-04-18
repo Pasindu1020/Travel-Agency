@@ -210,7 +210,6 @@ if (!$result) {
                         <th>Email</th>
                         <th>Rating</th>
                         <th>User ID</th>
-                        <th>Package ID</th>
                     </tr>
                 </thead>
             </table>
@@ -228,7 +227,6 @@ if (!$result) {
             echo "<td>".$row["Email"]."</td>";
             echo "<td>".$row["rating"]."</td>";
             echo "<td>".$row["User_id"]."</td>";
-            echo "<td>".$row["Package_id"]."</td>";
             echo "</tr>";
         }
         ?>
