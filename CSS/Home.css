@@ -24,11 +24,9 @@ body {
 .logo2 {
   position: absolute;
   top: 10px;
-  /* Adjust this value to fine-tune the vertical position */
   left: 20px;
-  /* Adjust this value to fine-tune the horizontal position */
   z-index: 1000;
-  /* Ensure the logo appears above other content */
+
 }
 
 .logo2 img {
