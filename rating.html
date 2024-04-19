@@ -8,8 +8,8 @@
 
 </head>
 
-<body >
-    
+<body>
+
 
 
 
@@ -30,53 +30,61 @@
     </div>
 
     <br>
-    
-  
+
+
     <div class="wrapper">
         <h3>We'd love to hear your feedback!</h3>
         <form action="Review.php" method="post">
-           <div class="rating">
-            <input type="number" name="rating" hidden>
-            <i class='bx bx-star star' data-value="1"></i>
-            <i class='bx bx-star star' data-value="2"></i>
-            <i class='bx bx-star star' data-value="3"></i>
-            <i class='bx bx-star star' data-value="4"></i>
-            <i class='bx bx-star star' data-value="5"></i>
-           </div>
+            <div class="rating">
+                <input type="number" name="rating" id="rating_value" hidden>
+                <i class='bx bx-star star' data-value="1"></i>
+                <i class='bx bx-star star' data-value="2"></i>
+                <i class='bx bx-star star' data-value="3"></i>
+                <i class='bx bx-star star' data-value="4"></i>
+                <i class='bx bx-star star' data-value="5"></i>
+            </div>
 
-           <textarea name="review" id="" cols="50" rows="2" placeholder="Country You Explored" required></textarea>
-           <input type="text" name="email" placeholder="Email" required>
-           <textarea name="opinion" id="" cols="50" rows="5" placeholder="Your Feedback..."></textarea>
-           <div class="btn-group">
-            <button type="Submit" class="btn Submit">Submit</button>
-            <button class="btn cancel">Cancel</button>
-           </div>
+            <textarea name="review" id="" cols="50" rows="2" placeholder="Country You Explored" required></textarea>
+            <input type="text" name="email" placeholder="Email" required>
+            <textarea name="opinion" id="" cols="50" rows="5" placeholder="Your Feedback..."></textarea>
+            <div class="btn-group">
+                <button type="Submit" class="btn Submit">Submit</button>
+                <button class="btn cancel">Cancel</button>
+            </div>
         </form>
     </div>
 
 
-    
-   
+
+
 
 
     <script>
         const allStar = document.querySelectorAll('.rating .star');
-    const ratingValueInput = document.getElementById('rating_value');
+        const ratingValueInput = document.getElementById('rating_value');
 
-    allStar.forEach((item, idx)=> {
-        item.addEventListener('click', function(){
-            allStar.forEach(i=>{
-                i.classList.replace('bxs-star','bx-star');
-            });
-            for(let i=0; i<allStar.length; i++){
-                if(i <= idx){
-                    allStar[i].classList.replace('bx-star', 'bxs-star');
+        document.querySelector('form').addEventListener('submit', function () {
+            let filledStars = 0;
+            allStar.forEach(item => {
+                if (item.classList.contains('bxs-star')) {
+                    filledStars++;
                 }
-            }
-            ratingValueInput.value = idx + 1; // Update the value of the hidden input field
+            });
+            ratingValueInput.value = filledStars; // Update the value of the hidden input field
         });
-    });
 
+        allStar.forEach((item, idx) => {
+            item.addEventListener('click', function () {
+                allStar.forEach(i => {
+                    i.classList.replace('bxs-star', 'bx-star');
+                });
+                for (let i = 0; i < allStar.length; i++) {
+                    if (i <= idx) {
+                        allStar[i].classList.replace('bx-star', 'bxs-star');
+                    }
+                }
+            });
+        });
     </script>
 
 </body>
